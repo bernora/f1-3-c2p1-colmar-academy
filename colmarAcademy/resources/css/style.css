@@ -1,0 +1,693 @@
+
+
+
+/* Generic styling */
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", Arial, sans-serif;
+  padding-top: 64px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity .5s;
+}
+
+h3 h2 {
+  transition: text-decoration .5s;
+}
+
+/*Titles*/
+
+.title-first {
+  font-size: 2.8rem;
+  font-family: "Roboto Slab", Helvetica, Serif;
+  font-weight: bold;
+  padding: 2rem 0;
+  line-height: 3rem;
+}
+
+.title-third {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+/*Section containers */
+
+.img-holder {
+  overflow: hidden;
+  width: 100%;
+  display: block;
+  height: auto;
+  background-color: inherit;
+}
+
+.content-main {
+  width: 60%;
+  overflow: hidden;
+}
+
+.side-bar {
+  width: 40%;
+}
+
+.background--dark {
+  background-color: #231826;
+}
+
+.font--light {
+  color: #F4F8F7;
+}
+
+.background--light {
+  background-color: #F4F8F7;
+}
+
+/* Flexbox generic stying*/
+
+/*Row*/
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.row--strech {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: stretch;
+  align-items: stretch;
+}
+
+.row--top--center {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.row--spacebetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row--middle--start {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/*Column*/
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.column--spacebetween {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.column--right--top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+
+/* Navigation bar styling */
+
+.navbar {
+  height: 4rem;
+  padding: 0 1.5rem;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #231826;
+  z-index: 5;
+}
+
+.logo span {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.logo span:first-of-type {
+  font-weight: 700;
+  color: #231826;
+}
+
+nav span {
+  padding-left: 1rem;
+}
+
+.navbar--mobile {
+  display: none;
+}
+
+/* Hero section stying */
+
+.container {
+  padding: 2rem 1.5rem;
+}
+
+.hero-main-content__img {
+  padding-right: 1.5rem;
+}
+
+.side-bar--middle {
+  margin: auto 0;
+  padding-left: 1.5rem;
+  }
+
+.hero-sidebar__description {
+  padding-right: 20%
+}
+
+.button {
+  display: block;
+  width: 90%;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  background-color: #F4F8F7;
+  color: #231826;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid #231826;
+  transition: all .5s;
+
+}
+
+.button:hover {
+  background-color: #231826;
+  color: white;
+  border: 2px solid white;
+}
+
+/* Information section styling */
+
+/*Large thumbnail item styling*/
+
+.thumbnail-large {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.thumbnail-large p {
+  line-height: 1.5rem;
+}
+
+.thumbnail-large__description__title {
+  font-size: 1.7rem;
+  padding: 1.5rem 0;
+  font-weight: bold;
+  font-family: "Roboto Slab", Helvetica, Serif;
+}
+
+.thumbnail-large__description__quote {
+  padding-top: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.thumbnail-large:hover h2 {
+  text-decoration: underline;
+}
+
+.thumbnail-large:hover img {
+  opacity: 0.6;
+}
+
+/* List Item Sidebar Stying */
+
+.side-bar--list {
+  padding: 1rem 0 2rem 0;
+  border-left: 1px solid #231826;
+}
+
+.list-item:hover h3 {
+  text-decoration: underline;
+}
+
+.list-item:hover img {
+  opacity: .6;
+}
+
+.list-item {
+  padding: 1rem;
+  border-top: 1px solid #231826;
+}
+
+.list-item__image {
+  width: 35%;
+  height: auto;
+  padding-right: 1rem;
+}
+
+.list-item__image--mobile {
+  display: none;
+}
+
+.list-item__text-container {
+  width: 65%;
+}
+
+.list-item__text-container__text {
+  padding: 1rem 0;
+  line-height: 1.3rem;
+}
+
+.list-item__text-container__link {
+  color: #719BB2;
+  line-height: 2rem;
+}
+
+.fa-newspaper-o {
+    padding-right: 0.5rem;
+}
+
+#info-section .side-bar--list > :first-child {
+  border-top: 0;
+}
+
+#info-section .side-bar--list > :last-child {
+  background-color: #719BB2;
+  color: white;
+}
+
+#info-section .side-bar--list > :last-child a{
+  color: white;
+}
+
+/* Grid section styling */
+
+.grid--mobile {
+  display: none;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 2.5rem 0 4.5rem;
+}
+
+.grid__title {
+  font-size: 1.7rem;
+  font-family: "Roboto Slab", Helvetica, serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem 2rem 0 2rem ;
+}
+
+.grid-item {
+  width: 31.8%;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.gid-item__description {
+    padding: 1rem 1rem 1.5rem 1rem;
+    line-height: 1.5;
+}
+
+.grid-item__label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 0.5rem 0;
+  color: #53729A;
+  line-height: 2;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-item:hover h3 {
+  text-decoration: underline;
+}
+
+.grid-item:hover img {
+  opacity: .6;
+}
+
+/*Thesis exhibit section styling */
+
+.side-bar--list--no-boder {
+  border: 0;
+  padding-top: 1rem;
+}
+
+.title-third--padding {
+  padding: 1.5rem 0 0.5rem 0;
+}
+
+video {
+  background-image: url(../images/video_placeholder.jpg);
+  background-position: center;
+}
+
+.list-item--no-border {
+  padding-top: 1rem;
+  border: 0;
+}
+
+#thesis-exhibit .side-bar--list--no-boder > div:first-child {
+  background-color: #719BB2;
+  color: white;
+  margin-top: 2rem;
+}
+
+/*Footer styling*/
+
+footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid grey;
+  margin-top: 1.5rem;
+  font: 0.5rem;
+  background-color: black;
+  color: white;
+}
+
+/*===================================================================================================================================*/
+
+/*STYLING FOR TABLET LANDSCAPE */
+
+@media (max-width: 900px){
+
+/* General styling changes */
+
+    .title-first {
+      font-size: 2rem;
+      padding: 0 1rem 1rem 0;
+      line-height: normal;
+    }
+
+    .title-third {
+      font-size: 1.1rem;
+    }
+
+    p{
+      font-size: 1rem;
+    }
+
+/* Amendments to the hero section */
+
+  .side-bar--middle {
+    margin: 0;
+  }
+
+  .hero-sidebar__description {
+    padding: 1.5rem 1.5rem 1.5rem 0 ;
+  }
+
+/*Changes to the grid*/
+
+  .grid-item {
+    width: 47%;
+  }
+
+}
+
+
+/*===================================================================================================================================*/
+
+/*STYLING FOR TABLET PORTRAIT */
+
+@media (max-width: 820px) {
+
+/*General styling changes*/
+
+  p, span {
+    font-size: .9rem;
+  }
+
+  .title-third {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .title-first {
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
+
+
+/*Hero section*/
+
+  .button {
+    width: 80%;
+    margin-top: 2rem;
+  }
+
+/*Changes to the list items*/
+
+  .list-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .list-item__text-container__text {
+    padding: 0.2rem 0;
+    line-height: normal;
+  }
+
+  .list-item span, .list-item i {
+    display: none;
+  }
+
+  .side-bar--list {
+    padding: 1rem 0;
+  }
+
+
+/*Changes to the grid*/
+
+  .grid-item {
+    width: 46%;
+  }
+
+  .grid-item__label {
+    padding: 0.1rem 0;
+  }
+
+  .grid {
+    padding: 1.5rem;
+  }
+
+  .grid__title {
+    padding-top: 1.5rem;
+  }
+
+}
+
+
+/*===================================================================================================================================*/
+
+/*STYLING FOR MOBILE */
+
+@media (max-width: 590px) {
+
+/*General styling changes*/
+
+  .title-first {
+    font-size: 2.7rem;
+    padding-bottom: 2rem;
+  }
+
+/*Changes to the navigation*/
+
+body {
+  padding: 0;
+}
+
+nav span {
+  display: none;
+}
+
+.navbar {
+    display: none;
+  }
+
+.navbar--mobile {
+    display: flex;
+    height: 3rem;
+    padding: 0 2rem;
+}
+
+/*Changes to the hero section*/
+
+  #hero-section {
+    flex-direction: column;
+  }
+
+  #hero-section .title-third {
+    padding-bottom: 2rem;
+  }
+
+  .title-first {
+    font-size: 2rem;
+  }
+
+  .content-main {
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .hero-main-content__img {
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-sidebar__description {
+    width: initial;
+    padding: 2rem 1rem 0 1rem;
+  }
+
+  .side-bar {
+    width: initial;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .button {
+    box-sizing: border-box;
+    width: initial;
+    margin: 0;
+  }
+
+  #info-section .thumbnail-large {
+    display: none;
+  }
+
+  /*Changes to the information section and list items*/
+
+  .side-bar--list {
+    border: 0;
+  }
+
+  .list-item {
+    flex-direction: column;
+    border: 0;
+  }
+
+  .list-item .title-third {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  #thesis-exhibit .side-bar {
+    display: none;
+  }
+
+  .list-item__image--mobile {
+    display: initial;
+  }
+
+  .list-item__image {
+    display: none;
+  }
+
+  .list-item span, .list-item i {
+    display: initial;
+    color: #719BB2;
+  }
+
+  #info-section .side-bar--list > :last-child {
+    background-color: initial;
+    color: initial;
+    margin: 0;
+    padding-bottom: 2rem;
+  }
+
+  .list-item {
+    padding: 2rem 1rem;
+    margin: 0;
+  }
+
+  .list-item__text-container {
+    width: initial;
+    padding: 1.5rem 1rem 0 1rem;
+  }
+
+  .list-item__text-container__text {
+    line-height: 1.5;
+    padding: 1rem 0;
+  }
+
+/*Changes to the grid*/
+
+  .grid {
+    display: none;
+  }
+
+  .grid--mobile {
+    display: block;
+    padding: 0 1rem;
+  }
+
+  .grid-item--mobile {
+    display: block;
+    margin-bottom: 0.3rem;
+    padding: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all .5s;
+  }
+
+  .grid-item--mobile:hover {
+    background-color: white;
+    color: #231826;
+  }
+
+  .grid__title {
+    padding: 2rem 0.5rem 1rem 0.5rem;
+    color: inherit;
+    background-color: inherit;
+    font-size: 2rem;
+    }
+
+/* Changes to the thesis exhibit section */
+
+  .thumbnail-large {
+    width: initial;
+    padding: 0 1rem;
+  }
+
+  .thumbnail-large__description {
+    display: none;
+  }
+
+}
